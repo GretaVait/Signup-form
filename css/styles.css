@@ -1,0 +1,173 @@
+:root {
+    --primary-color-red: hsl(0, 100%, 74%);
+    --primary-color-green: hsl(154, 59%, 51%);
+    --accent-color-blue: hsl(248, 32%, 49%);
+    --neutral-color-darkblue: hsl(249, 10%, 26%);
+    --shadow-color: rgba(61, 59, 72, 0.4);
+    --neutral-color-garyishblue: hsl(246, 25%, 77%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.white {
+    color: #fff;
+}
+
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/bg-intro-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--primary-color-red);
+    text-align: center;
+}
+
+main {
+    padding: 100px 20px 50px 20px;
+}
+
+h1 {
+    margin: 0 0 30px 0;
+    font-size: 1.777em;
+    font-weight: 700;
+}
+
+main p {
+    margin: 0 0 50px 0;
+    font-size: 1em;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.banner {
+    margin: 0 0 20px 0;
+    background-color: var(--accent-color-blue);
+    padding: 10px 50px;
+    border-radius: 5px;
+    box-shadow: 0 8px var(--shadow-color);
+}
+
+.banner span {
+    font-size: 1em;
+    line-height: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 8px var(--shadow-color);
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid var(--neutral-color-garyishblue);
+    border-radius: 5px;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+input::placeholder {
+    font-weight: 600;
+}
+
+form span {
+    color: var(--primary-color-red);
+    text-align: right;
+    font-size: 0.75em;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 10px;
+    background-color: var(--primary-color-green);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 4px hsl(154, 59%, 34%);
+    cursor: pointer;
+}
+
+form p {
+    font-size: 0.75em;
+    line-height: 2;
+}
+
+form p a {
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-color-red);
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url(../images/bg-intro-desktop.png);
+    }
+
+    h1 {
+        font-size: 1.777em;
+        line-height: 1.2;
+    }
+
+    main p {
+        font-size: 0.75em;
+        line-height: 1.2;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 100px 50px;
+    }
+
+    .primary {
+        width: 50%;
+        text-align: left;
+    }
+
+    .banner span {
+        font-size: 0.75em;
+    }
+
+    form {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1350px) {
+    h1 {
+        font-size: 2.369em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 100px 150px;
+    }
+
+    .banner span {
+        font-size: 1em;
+    }
+
+    form {
+        padding: 40px;
+    }
+}
